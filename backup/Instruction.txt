@@ -1,0 +1,3 @@
+Type the following command on ubuntu
+
+"bash run.sh"
