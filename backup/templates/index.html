@@ -1,0 +1,52 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="{{ url_for('static', filename='jumbotron_narrow.css') }}" rel="stylesheet">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <link href="{{ url_for('static', filename='star-rating.css') }}" media="all" rel="stylesheet" type="text/css" />
+      <link href="{{ url_for('static', filename='theme.css') }}" media="all" rel="stylesheet" type="text/css" />
+
+</head>
+  <body>
+  <div class="container ">
+      <div class="header">
+        <a class = "text-center" role = "button" href="/"> <h3 class="text-muted text-center">Honours College Leadership Making Difference - Lab project</h3> </a>
+      </div>
+
+  {% block lister %}{% endblock %}
+
+  
+
+   <div class="nav container-fluid navbar-fixed-bottom">
+      <!-- <div class="input-group "> -->
+      <!-- <input id="in" type="text" class="form-control" placeholder="Share your feelings here" aria-describedby="basic-addon2"> -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+      <!-- <span class="input-group-addon" id="basic-addon2">Live comment</span> -->
+      <!-- </div> -->
+      
+      </div>
+      
+      <div class="footer text-center">
+        <p>&copy; De Opstap 2017, Dotftu,Bente, and Cecilia</p>
+        </div>
+  </div>
+
+  </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="{{ url_for('static', filename='survey.jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='mysurvey.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='star-rating.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='theme.js') }}"></script>
+
+
+</html>

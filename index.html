@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>De opstap honours</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="survey/bottommodal.css" rel="stylesheet">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <link href="rating/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+      <link href="rating/theme.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div>
+  
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="">Honours College Leadership Making Difference - Lab project</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="">Feedback</a></li>
+        <!-- <li><a href="#">Link</a></li> -->
+        <!-- <li><a href="#">Link</a></li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="jumbotron hidden" id="feedback">
+            <!-- <div class="container text-center">  -->
+            <!-- <p>De Opstap Feed back page</p> -->
+            <!-- <p>We would love to get your feedback.</p>   -->
+            <div id="surveyContainer" class="form-group hidden">   </div>
+        <!-- </div> -->
+    </div>
+
+<div class="modal fade" id="slide-bottom-popup" data-keyboard="false" data-backdrop="false">
+    <div class="modal-body" onclick="opensurvey()" data-dismiss="modal">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <p>Help us improve De opstap, give us feedback!!!</p>
+
+          <div class="input-group" >
+
+           <input id="input-21e" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="1" data-size="sm" value="3" >
+          
+          <!-- <input type="text" class="form-control" aria-label="..."> -->
+          <!-- <div class="input-group-btn"> -->
+        <!-- <a href="#" class="btn-primary btn-plain btn popup-button" onclick="opensurvey()" data-dismiss="modal"> Click Here</a> -->
+          <!-- </div> -->
+          <!-- <img src="img/adface.png" alt="pic1"> -->
+            </div>
+
+
+    </div><!-- /.modal-body -->
+</div><!-- /.modal -->
+
+</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="survey/survey.jquery.min.js"></script>
+<script type="text/javascript" src="survey/timer.js"></script>
+
+<script type="text/javascript" src="rating/star-rating.js"></script>
+<script type="text/javascript" src="rating/theme.js"></script>
+
+</html>
